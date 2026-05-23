@@ -42,24 +42,24 @@ export default function Header() {
         >
             <nav
                 className={cn(
-                    "mx-auto flex max-w-7xl items-center justify-between rounded-full px-6 py-3 transition-all duration-700",
+                    "mx-auto flex max-w-7xl items-center justify-between gap-4 rounded-full px-4 py-3 transition-all duration-700 sm:px-6",
                     isScrolled
                         ? "bg-background/80 shadow-lg shadow-primary/5 border border-primary/10 backdrop-blur-md"
                         : "bg-transparent border border-transparent shadow-none"
                 )}
             >
                 {/* Logo */}
-                <Link to="/" className="flex items-center gap-2 group">
-                    <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary text-primary-foreground shadow-lg transition-transform group-hover:rotate-12">
-                        <span className="font-heading text-xl font-bold">C</span>
+                <Link to="/" className="flex shrink-0 items-center gap-2 group">
+                    <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary text-primary-foreground shadow-lg transition-transform group-hover:rotate-12 sm:h-10 sm:w-10">
+                        <span className="font-heading text-lg font-bold sm:text-xl">C</span>
                     </div>
-                    <span className="font-heading text-2xl font-bold tracking-tighter text-foreground">
+                    <span className="font-heading text-xl font-bold tracking-tighter text-foreground sm:text-2xl">
                         CASA<span className="font-light text-cta">CORT</span>
                     </span>
                 </Link>
 
                 {/* Desktop Navigation */}
-                <div className="hidden items-center gap-8 md:flex">
+                <div className="hidden items-center gap-5 md:flex lg:gap-6 xl:gap-8">
                     {navItems.map((item) => (
                         <a
                             key={item.href}
