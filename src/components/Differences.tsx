@@ -33,7 +33,7 @@ const Differences = () => {
               DNA de Exclusividade
             </div>
             <h2 className="font-heading text-5xl font-bold text-foreground md:text-7xl lg:text-8xl leading-tight">
-              O Padrão de Luxo <br />
+              O Padrão de alta costura <br />
               <span className="text-cta italic font-light">Casa Cort</span>
             </h2>
           </div>

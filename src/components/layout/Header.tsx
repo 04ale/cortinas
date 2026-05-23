@@ -10,6 +10,7 @@ import {
     SheetTrigger,
 } from "@/components/ui/sheet"
 import { cn } from "@/lib/utils"
+import { ModeToggle } from "../theme/mode-toggle"
 
 const navItems = [
     { label: "Início", href: "#home" },
@@ -71,11 +72,13 @@ export default function Header() {
                             <span className="absolute -bottom-1 left-0 h-px w-0 bg-cta transition-all duration-300 group-hover:w-full" />
                         </a>
                     ))}
+                    
                 </div>
 
                 {/* Actions */}
                 <div className="flex items-center gap-2 md:gap-4">
                     <div className="hidden sm:block">
+                    <ModeToggle />
                     </div>
 
                     <Button

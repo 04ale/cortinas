@@ -26,7 +26,6 @@ const HeroBanner = () => {
           <h1 className="mb-6 font-heading text-6xl font-bold leading-none text-foreground md:text-8xl lg:text-9xl">
             A Arte do <br />
             <span className="text-cta italic font-light">Refinamento</span> <br />
-            em Janelas
           </h1>
 
           <p className="mb-10 max-w-xl font-sans text-lg text-muted-foreground md:text-xl leading-relaxed">
