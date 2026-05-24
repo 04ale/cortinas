@@ -4,7 +4,7 @@ function FinalCTA() {
     return (
         <section id="contato" className="bg-background py-24 lg:py-40">
             <div className="container mx-auto px-6">
-                <div className="relative overflow-hidden rounded-[4rem] bg-primary p-12 text-center text-white lg:p-32 max-w-7xl mx-auto shadow-2xl">
+                <div className="relative overflow-hidden rounded-[4rem] bg-linear-to-br from-[oklch(0.25_0.02_50)] to-[oklch(0.15_0.02_50)] p-12 text-center text-white lg:p-32 max-w-7xl mx-auto shadow-2xl border border-white/10">
                     {/* Decorative Background Elements */}
                     <div className="absolute -left-20 -top-20 h-64 w-64 rounded-full bg-cta/10 blur-3xl" />
                     <div className="absolute -right-20 -bottom-20 h-64 w-64 rounded-full bg-cta/10 blur-3xl" />

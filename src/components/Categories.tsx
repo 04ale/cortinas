@@ -92,8 +92,8 @@ const Categories = () => {
                   className="h-full w-full object-cover transition-transform duration-1000 group-hover:scale-110"
                 />
 
-                {/* Liquid Glass Overlay */}
-                <div className="absolute inset-0 bg-linear-to-t from-primary/90 via-primary/20 to-transparent opacity-80 transition-all duration-500 group-hover:opacity-100" />
+                {/* Liquid Glass Overlay & Premium Dark Inset Shadow */}
+                <div className="absolute inset-0 bg-linear-to-t from-black/95 via-black/30 to-transparent shadow-[inset_0_0_100px_rgba(0,0,0,0.8)] opacity-90 transition-all duration-500 group-hover:opacity-100" />
 
                 {/* Content (Bottom) */}
                 <div className="absolute inset-x-0 bottom-0 p-10 text-white">

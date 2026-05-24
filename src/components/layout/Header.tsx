@@ -16,8 +16,8 @@ const navItems = [
     { label: "Início", href: "#home" },
     { label: "Categorias", href: "#categorias" },
     { label: "Diferenciais", href: "#diferenciais" },
-    { label: "Processo", href: "#processo" },
     { label: "Depoimentos", href: "#depoimentos" },
+    { label: "Processo", href: "#processo" },
 ]
 
 export default function Header() {
@@ -72,13 +72,13 @@ export default function Header() {
                             <span className="absolute -bottom-1 left-0 h-px w-0 bg-cta transition-all duration-300 group-hover:w-full" />
                         </a>
                     ))}
-                    
+
                 </div>
 
                 {/* Actions */}
                 <div className="flex items-center gap-2 md:gap-4">
                     <div className="hidden sm:block">
-                    <ModeToggle />
+                        <ModeToggle />
                     </div>
 
                     <Button

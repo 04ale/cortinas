@@ -21,7 +21,7 @@ const HeroBanner = () => {
 
       <div className="container relative z-10 mx-auto flex min-h-0 flex-1 flex-col justify-center px-6 pt-20 pb-8 sm:pt-24 md:px-12 md:pb-10 lg:pt-28">
         <div className="flex max-w-3xl flex-col gap-5 md:max-w-4xl md:gap-6 lg:gap-7 [@media(max-height:720px)]:gap-3.5">
-          <div className="inline-flex max-w-full shrink-0 items-center gap-2.5 rounded-full border border-cta/20 bg-cta/10 px-4 py-1.5 text-xs font-semibold tracking-widest text-cta uppercase backdrop-blur-md">
+          <div className="inline-flex self-start max-w-full shrink-0 items-center gap-2.5 rounded-full border border-cta/20 bg-cta/10 px-4 py-1.5 text-xs font-semibold tracking-widest text-cta uppercase backdrop-blur-md">
             <span className="relative flex h-2 w-2 shrink-0">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-cta opacity-75"></span>
               <span className="relative inline-flex h-2 w-2 rounded-full bg-cta"></span>
