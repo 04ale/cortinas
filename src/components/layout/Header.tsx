@@ -11,8 +11,8 @@ import {
 } from "@/components/ui/sheet"
 import { cn } from "@/lib/utils"
 import { ModeToggle } from "../theme/mode-toggle"
-import logoLight from "@/assets/logo1.png"
-import logoDark from "@/assets/logo1_d.png"
+import logoLight from "@/assets/logo1c.png"
+import logoDark from "@/assets/logo1_dc.png"
 
 const navItems = [
     { label: "Início", href: "#home" },

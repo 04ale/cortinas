@@ -1,7 +1,7 @@
 import { MessageCircle, Mail, MapPin, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
-import logoLight from "@/assets/logo1.png";
-import logoDark from "@/assets/logo1_d.png";
+import logoLight from "@/assets/logo1c.png";
+import logoDark from "@/assets/logo1_dc.png";
 
 
 const Instagram = ({ className }: { className?: string }) => (
