@@ -11,6 +11,8 @@ import {
 } from "@/components/ui/sheet"
 import { cn } from "@/lib/utils"
 import { ModeToggle } from "../theme/mode-toggle"
+import logoLight from "@/assets/logo1.png"
+import logoDark from "@/assets/logo1_d.png"
 
 const navItems = [
     { label: "Início", href: "#home" },
@@ -50,9 +52,8 @@ export default function Header() {
             >
                 {/* Logo */}
                 <Link to="/" className="flex shrink-0 items-center gap-2 group">
-                    <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary text-primary-foreground shadow-lg transition-transform group-hover:rotate-12 sm:h-10 sm:w-10">
-                        <span className="font-heading text-lg font-bold sm:text-xl">C</span>
-                    </div>
+                    <img src={logoLight} alt="Logo" className="h-10 block dark:hidden" />
+                    <img src={logoDark} alt="Logo" className="h-10 hidden dark:block" />
                     <span className="font-heading text-xl font-bold tracking-tighter text-foreground sm:text-2xl">
                         CASA<span className="font-light text-cta">CORT</span>
                     </span>

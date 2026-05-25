@@ -1,5 +1,7 @@
 import { MessageCircle, Mail, MapPin, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
+import logoLight from "@/assets/logo1.png";
+import logoDark from "@/assets/logo1_d.png";
 
 
 const Instagram = ({ className }: { className?: string }) => (
@@ -40,9 +42,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand Column */}
           <div className="flex flex-col items-start">
-            <h2 className="font-heading text-3xl font-bold text-foreground tracking-tight">
-              CASA <span className="text-cta italic font-light">CORT</span>
-            </h2>
+            <Link to="/" className="flex items-center gap-2 group">
+              <img src={logoLight} alt="Logo" className="h-14 block dark:hidden" />
+              <img src={logoDark} alt="Logo" className="h-14 hidden dark:block" />
+              <span className="font-heading text-3xl font-bold text-foreground tracking-tight">
+                CASA <span className="text-cta italic font-light">CORT</span>
+              </span>
+            </Link>
             <p className="mt-8 font-sans text-base leading-relaxed text-muted-foreground/80 max-w-[280px]">
               Elegância que inspira e transforma ambientes exclusivos.
               Referência em design de interiores e automação de luxo.
@@ -90,7 +96,7 @@ const Footer = () => {
             <ul className="space-y-6 font-sans text-sm text-muted-foreground">
               <li className="flex items-start gap-4 group">
                 <MapPin className="h-5 w-5 shrink-0 text-cta mt-0.5 transition-transform group-hover:scale-110" />
-                <span className="leading-relaxed group-hover:text-foreground transition-colors">Av. São João, 500<br />Atibaia, SP</span>
+                <span className="leading-relaxed group-hover:text-foreground transition-colors">Av. Paulista, 1045, Jd Paulista <br /> Atibaia SP</span>
               </li>
               <li className="flex items-center gap-4 group">
                 <Phone className="h-5 w-5 shrink-0 text-cta transition-transform group-hover:scale-110" />
@@ -98,7 +104,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-4 group">
                 <Mail className="h-5 w-5 shrink-0 text-cta transition-transform group-hover:scale-110" />
-                <span className="group-hover:text-foreground transition-colors font-medium">contato@casacort.com.br</span>
+                <span className="group-hover:text-foreground transition-colors font-medium">casacortdecor@gmail.com</span>
               </li>
             </ul>
           </div>
